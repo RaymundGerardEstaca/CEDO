@@ -1,0 +1,11 @@
+{
+    "name": "My Figma Plugin",
+    "id": "com.example.myfigmaplugin",
+    "api": "1.0.0",
+    "editorType": [
+        "figma",
+        "figjam"
+    ],
+    "main": "code.ts",
+    "ui": "ui.html"
+}

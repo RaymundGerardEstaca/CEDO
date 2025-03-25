@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Plugin UI</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 16px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Plugin Interface</h1>
+    <button id="action">Click Me</button>
+    <script>
+        const button = document.getElementById('action');
+        button.onclick = () => {
+            // Send a message to the main code
+            parent.postMessage({ pluginMessage: { action: 'do-something' } }, '*');
+        };
+    </script>
+</body>
+
+</html>
